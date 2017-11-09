@@ -1,0 +1,120 @@
+//Grid Testing
+.box {
+  color: $black;
+  font-size: $font-large;
+  text-align: center;
+  background-color: $yellow;
+  border: 10px solid $black;
+  border-radius: 15px;
+  padding: $padding-normal;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: [col1-start] 100px [col1-end] 10px [col2-start] 100px [col2-end] 10px [col3-start] 100px [col3-end];
+  grid-template-rows: [row1-start] auto [row1-end] 10px [row2-start] auto [row2-end];
+}
+
+.a {
+  grid-column: col1-start / col2-end;
+  grid-row: row1-start;
+}
+
+.b {
+  grid-column: col3-start;
+  grid-row: row1-start / row2-end;
+}
+
+.c {
+  grid-column: col1-start;
+  grid-row: row2-start;
+}
+
+.d {
+  grid-column: col2-start;
+  grid-row: row2-start;
+}
+
+//Grid Testing Two
+.wrap {
+  display: grid;
+  grid-template-columns: 200px 10px 200px 10px 200px;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "header header header header header"
+  "sidebar . content content content"
+  "footer footer footer footer footer"
+}
+
+.box2 {
+  color: $black;
+  font-size: $font-large;
+  text-align: center;
+  background-color: $yellow;
+  border: 10px solid $black;
+  border-radius: 15px;
+  padding: $padding-normal;
+}
+
+.sidebar { grid-area: sidebar; }
+.content { grid-area: content; }
+.header { grid-area: header; }
+.footer { grid-area: footer; }
+
+
+// Grid Testing 2
+.wrapper {
+  display: grid;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  grid-template-columns: 9fr 40px 3fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header"
+    "content . sidebar"
+    "footer footer footer";
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 9fr 40px 3fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "chapterhead . ."
+    "article-primary . article-secondary";
+}
+
+.mainheader {
+  grid-area: header;
+  background-color: $grey;
+  padding: $padding-normal;
+ }
+
+.content {
+  grid-area: content;
+  padding: $padding-normal;
+
+  .primary {
+    grid-area: article-primary;
+  }
+
+  aside {
+    grid-area: article-secondary;
+  }
+
+  h1 {
+    grid-area: chapterhead;
+  }
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: $grey;
+  padding: $padding-normal;
+}
+
+.mainfooter {
+  grid-area: footer;
+  background-color: $grey;
+  padding: $padding-normal / 2;
+}

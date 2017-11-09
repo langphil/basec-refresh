@@ -1,3 +1,14 @@
+// Variables
 $font:    Helvetica, sans-serif;
+$font-normal: 22px;
+$font-large: 32px;
+$one-em: 1em;
 $black: #000000;
 $white: #ffffff;
+$grey: rgba(251,248,245,0.98);
+
+// Main CSS
+body {
+  font-family: $font;
+  margin: 0;
+}
