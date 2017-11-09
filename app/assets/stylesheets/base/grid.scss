@@ -3,10 +3,10 @@
   color: $black;
   font-size: $font-large;
   text-align: center;
-  background-color: $yellow;
+  background-color: $grey;
   border: 10px solid $black;
   border-radius: 15px;
-  padding: $padding-normal;
+  padding: $one-em;
 }
 
 .wrapper {
@@ -50,10 +50,10 @@
   color: $black;
   font-size: $font-large;
   text-align: center;
-  background-color: $yellow;
+  background-color: $grey;
   border: 10px solid $black;
   border-radius: 15px;
-  padding: $padding-normal;
+  padding: $one-em;
 }
 
 .sidebar { grid-area: sidebar; }
@@ -87,12 +87,12 @@
 .mainheader {
   grid-area: header;
   background-color: $grey;
-  padding: $padding-normal;
+  padding: $one-em;
  }
 
 .content {
   grid-area: content;
-  padding: $padding-normal;
+  padding: $one-em;
 
   .primary {
     grid-area: article-primary;
@@ -110,11 +110,11 @@
 .sidebar {
   grid-area: sidebar;
   background-color: $grey;
-  padding: $padding-normal;
+  padding: $one-em;
 }
 
 .mainfooter {
   grid-area: footer;
   background-color: $grey;
-  padding: $padding-normal / 2;
+  padding: $one-em / 2;
 }
