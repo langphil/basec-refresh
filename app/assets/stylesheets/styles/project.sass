@@ -1,7 +1,60 @@
 // Place all the styles related to the Project controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// Grid Body
 
-h1
-  font-family: $font
-  color: $black
+.container-home
+  display: grid
+  grid-template-columns: auto
+  grid-template-rows: auto
+  width: 100%
+  margin: 0 auto 0 auto
+  margin-top: 1rem
+
+.row-header
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  width: 80%
+  margin: 0 auto 0 auto
+  align-items: center
+  justify-items: center
+
+  button
+    background-color: $white
+    border: solid $black 0.2rem
+    font-size: 1rem
+    padding: 0.6rem
+    border: none
+    border-radius: 5px
+
+    .button-plus
+      font-size: 1.2rem
+      font-style: bold
+      color: green
+
+.row-projects
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 1rem
+  width: 80%
+  margin: 0 auto 0 auto
+
+  .project-card
+    background-color: $white
+    border-radius: 10px
+    margin-top: 1rem
+    -webkit-box-shadow: -2px 9px 42px -22px rgba(0,0,0,0.75)
+    -moz-box-shadow: -2px 9px 42px -22px rgba(0,0,0,0.75)
+    box-shadow: -2px 9px 42px -22px rgba(0,0,0,0.75)
+
+    a
+      color: $black
+      text-decoration: none
+
+      h4
+        font-size: 1.4rem
+        padding-left: 1rem
+
+      p
+        padding-left: 1rem
+        padding-bottom: 1rem
