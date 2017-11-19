@@ -2,12 +2,14 @@
   <div class="row-header">
     <div class="new-btn">
       <button type="button" name="button" id="button-popup-show">New</button>
-      <div class="button-popup is-hidden">
+      <div class="button-popup is-hidden" id="button-popup">
+        <%= form_with(model: @project) do |f| %>
         <div>
-          <input class="form-control" type="text" name="popup" placeholder="Name this project">
+          <%= f.text_field :name, class: "form-control", id: "project-name-input", placeholder: "Name this project", autofocus: true %>
         </div>
-        <button type="button" name="button" id="popup-submit">Submit</button>
+        <%= f.submit "Save", class: "btn btn-success", id: "popup-submit" %>
         <button type="button" name="button" id="popup-cancel">Cancel</button>
+        <% end %>
       </div>
     </div>
     <div class="heading-project">
@@ -17,42 +19,9 @@
       <button type="button" name="button">...</button>
     </div>
   </div>
-  <div class="row-projects">
-    <div class="project-card">
-      <a href="#" class="project-link">
-        <h4>Title</h4>
-        <p>Desc</p>
-      </a>
-    </div>
-    <div class="project-card">
-      <a href="#" class="project-link">
-        <h4>Title</h4>
-        <p>Desc</p>
-      </a>
-    </div>
-    <div class="project-card">
-      <a href="#" class="project-link">
-        <h4>Title</h4>
-        <p>Desc</p>
-      </a>
-    </div>
-    <div class="project-card">
-      <a href="#" class="project-link">
-        <h4>Title</h4>
-        <p>Desc</p>
-      </a>
-    </div>
-    <div class="project-card">
-      <a href="#" class="project-link">
-        <h4>Title</h4>
-        <p>Desc</p>
-      </a>
-    </div>
-    <div class="project-card">
-      <a href="#" class="project-link">
-        <h4>Title</h4>
-        <p>Desc</p>
-      </a>
-    </div>
+  <div class="row-projects" id="project-list">
+    <% @projects.each do |project| %>
+      <%= render "project_card", project: project %>
+    <% end %>
   </div>
 </div>
