@@ -1,7 +1,14 @@
 <div class="container-home">
   <div class="row-header">
     <div class="new-btn">
-      <button type="button" name="button"><span class="button-plus">+</span>New</button>
+      <button type="button" name="button" id="button-popup-show">New</button>
+      <div class="button-popup is-hidden">
+        <div>
+          <input class="form-control" type="text" name="popup" placeholder="Name this project">
+        </div>
+        <button type="button" name="button" id="popup-submit">Submit</button>
+        <button type="button" name="button" id="popup-cancel">Cancel</button>
+      </div>
     </div>
     <div class="heading-project">
       <h2>Projects</h2>

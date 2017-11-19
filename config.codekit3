@@ -7,7 +7,7 @@
 		"uuidString": "8AAD20A2-F918-4432-BE80-F193A94229FB"
 		}
 	],
-"creatorBuild": "26097",
+"creatorBuild": "26148",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -32,6 +32,17 @@
 		"oA": 0,
 		"oAP": "\/app\/assets\/images\/.keep",
 		"oF": 0
+		},
+	"\/app\/assets\/images\/navbar-icon.png": {
+		"ft": 32768,
+		"iS": 933,
+		"oA": 0,
+		"oAP": "\/app\/assets\/images\/navbar-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/app\/assets\/javascripts\/application.js": {
 		"ft": 64,
@@ -71,6 +82,16 @@
 		"sC": 1,
 		"tS": 1
 		},
+	"\/app\/assets\/javascripts\/project.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/assets\/javascripts\/project-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/app\/assets\/stylesheets\/application.css": {
 		"aP": 1,
 		"bl": 0,
@@ -90,6 +111,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/app\/assets\/stylesheets\/base\/globals.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/assets\/stylesheets\/base\/grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/app\/assets\/stylesheets\/base\/grid.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -130,6 +164,19 @@
 		"oA": 0,
 		"oAP": "\/app\/assets\/stylesheets\/main.css",
 		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/assets\/stylesheets\/styles\/navbar.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/app\/assets\/stylesheets\/styles\/navbar.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
@@ -228,6 +275,20 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/public\/stylesheets",
+		"oF": 0
+		},
+	"\/app\/views\/layouts\/_grid.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/app\/views\/layouts\/_grid.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/layouts\/_navbar.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/app\/views\/layouts\/_navbar.html.erb",
 		"oF": 0
 		},
 	"\/app\/views\/layouts\/application.html.erb": {
